@@ -8,7 +8,7 @@
  #include <stdio.h>
 
  int main(void) {
-   // get user input, which should be a positive integer
+   // get pattern height from user, which should be a positive integer
    int n;
    do {
      printf("Stars pattern height: ");
