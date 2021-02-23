@@ -12,7 +12,7 @@ next step*
   gcc --version
   ```
   - If not installed, head over to here [GCC](https://gcc.gnu.org/)
-- Clone this repo as shown below or just fork it
+- Clone this repo as shown below or fork it
 ```
 git clone https://github.com/gdkimaiyo/cs50x.harvard.practice.exercises.git
 ```
