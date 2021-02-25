@@ -5,17 +5,15 @@
  * you type cast as shown below
  */
 
- #include "cs50.h"
+ #include <cs50.h>
  #include <stdio.h>
 
  int main(void)
  {
    // get two integers from user
-   printf("a: ");
-   int a = GetInt();
+   int a = get_int("a: ");
 
-   printf("b: ");
-   int b = GetInt();
+   int b = get_int("b: ");
 
    // divide a by b
    float result = (float) a / (float) b;

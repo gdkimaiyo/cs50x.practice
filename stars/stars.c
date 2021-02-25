@@ -4,15 +4,14 @@
  * positive integer
  */
 
- #include "cs50.h"
+ #include <cs50.h>
  #include <stdio.h>
 
  int main(void) {
    // get pattern height from user, which should be a positive integer
    int n;
    do {
-     printf("Stars pattern height: ");
-     n = GetInt();
+     n = get_int("Stars pattern height: ");
    } while (n < 1);
 
    // print out the stars pattern
