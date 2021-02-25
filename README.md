@@ -35,9 +35,17 @@ gcc stars.c cs50.c -o stars
 - Done.
 
 ## Some of the programs are briefly explained below
+### abstraction
+This prompts for a positive integer, then finds the summation of numbers from
+0 to that number.
+
+The **objective** of this program is to understand abstraction and loops
+**Abstraction** is the use of functions to enable flexibility to reuse pieces
+of code.
+
 ### stars
 This program prints / outputs stars pattern with increasing height and width
-starting with 1 star. 
+starting with 1 star.
 
 **Main learning lesson**: Understanding nesting in loops
 in C
