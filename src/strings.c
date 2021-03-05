@@ -8,7 +8,7 @@
 #include <stdio.h>
 #include <string.h>
 
-int main() {
+int main(void) {
   // String initialization.
   char msg[50] = "Bye";
   printf("Message: %s\n", msg); // Bye
