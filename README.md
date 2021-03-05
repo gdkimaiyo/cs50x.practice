@@ -61,15 +61,23 @@ This program demonstrates the use of a switch conditional statements where discr
 String are declared as char but with a size specified just like in Arrays. They are 1-Dimensional Arrays. They are terminated by a null character, which you do
 have to. The compiler automatically adds the null character at the end.
 
-**String initialization**: `char msg[50] = "Bye";`&nbsp;String declaration and assignment CANNOT be done separately. String copying is done instead by using strcpy() function.&nbsp;`char reply[50];`&nbsp;`strcpy(reply, "Welcome");`
+**String initialization**: `char msg[50] = "Bye";`  
+String declaration and assignment CANNOT be done separately. String copying is done instead by using strcpy() function.  
+`char reply[50];`  
+`strcpy(reply, "Welcome");`
 
-**String length**&nbsp;1. Without using in-built function in string.h&nbsp;`int len = 0;`&nbsp;`for (int i = 0; msg[i] != '\0'; i++) { len += 1; }`  
-2. Using in-built function strlen()&nbsp;`len = strlen(reply);`
+**String length**  
+1. Without using in-built function in string.h  
+`int len = 0;`  
+`for (int i = 0; msg[i] != '\0'; i++) { len += 1; }`  
+2. Using in-built function strlen()  
+`len = strlen(reply);`
 
-**String Compare** `strcmp(s1, s2)`&nbsp;Compares two strings. Returns 0 if the two strings are the same, negative if s1<s2 and positive if s1>s2.
+**String Compare** `strcmp(s1, s2)`  
+Compares two strings. Returns 0 if the two strings are the same, negative if s1<s2 and positive if s1>s2.
 
-**String Concatenation**
-`strcat(s1, s2),`&nbsp;Concatenates string s2 to the end of string s1
+**String Concatenation** `strcat(s1, s2),`  
+Concatenates string s2 to the end of string s1
 
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
