@@ -52,6 +52,11 @@ short conditional statements
 For scenario above, if the expression is true value1 is assigned to the
 variable number, otherwise value2 is assigned.
 
+### receipt
+The is a receipt generator for customers to a mini-shop.
+
+This program demonstrates the use of a switch conditional statements where discrete cases are already known like for instance when a particular item is selected by the customer.
+
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
 refers to changing the variable of one data type to another. Like in the
