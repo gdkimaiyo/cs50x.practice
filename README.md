@@ -43,12 +43,14 @@ The **objective** of this program is to understand abstraction and loops.
 **Abstraction** is the use of functions to enable flexibility to reuse pieces
 of code.
 
-### stars
-This program prints / outputs stars pattern with increasing height and width
-starting with 1 star.
+### ternary
+This program demonstrates the use of **ternary** operator **? : ** in place of
+short conditional statements
 
-**Main learning lesson**: Understanding nesting in loops
-in C
+` int number = (expression) ? value1 : value2`
+
+For scenario above, if the expression is true value1 is assigned to number
+otherwise value2 is assigned. 
 
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
@@ -60,3 +62,10 @@ the output will be inaccurate. This is called a **logical error**. Type casting 
 **Counter Option**: Why not just change the data type of the two numbers to
 of type float. **Yes**, that could work, **however**, that is a heavy handed
 solution. It is like using a forklift to lift a small piece of stone.
+
+### stars
+This program prints / outputs stars pattern with increasing height and width
+starting with 1 star.
+
+**Main learning lesson**: Understanding nesting in loops
+in C

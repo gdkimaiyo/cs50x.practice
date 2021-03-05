@@ -1,6 +1,6 @@
-/*
- * C program to demonstrates use of boolean in C
- * xyz
+/* C program to demonstrates use of booleans in C
+ * This program continues to ask for a number which should be non-zero else
+ * the program stops
  */
 #include <cs50.h>
 #include <stdio.h>
