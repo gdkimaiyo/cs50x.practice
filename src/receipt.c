@@ -64,6 +64,7 @@ int main(void) {
   // Total Items
   total_items = book_qty + pencil_qty + rubber_qty;
 
+  // Show purchase summary
   if (total > 0) {
     printf("Total purchase: %i\n", total);
     cash = getCash(total);
