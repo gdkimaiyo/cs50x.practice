@@ -44,13 +44,13 @@ The **objective** of this program is to understand abstraction and loops.
 of code.
 
 ### ternary
-This program demonstrates the use of **ternary** operator **? : ** in place of
+This program demonstrates the use of **ternary** operator ?: in place of
 short conditional statements
 
 ` int number = (expression) ? value1 : value2`
 
-For scenario above, if the expression is true value1 is assigned to number
-otherwise value2 is assigned. 
+For scenario above, if the expression is true value1 is assigned to the
+variable number, otherwise value2 is assigned.
 
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
