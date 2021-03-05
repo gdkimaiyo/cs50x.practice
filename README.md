@@ -67,10 +67,10 @@ String declaration and assignment CANNOT be done separately. String copying is d
 `strcpy(reply, "Welcome");`
 
 **String length**  
-1. Without using in-built function in string.h  
+Without using in-built function in string.h  
 `int len = 0;`  
 `for (int i = 0; msg[i] != '\0'; i++) { len += 1; }`  
-2. Using in-built function strlen()  
+Using in-built function strlen()  
 `len = strlen(reply);`
 
 **String Compare** `strcmp(s1, s2)`  
