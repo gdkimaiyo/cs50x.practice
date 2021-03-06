@@ -58,7 +58,7 @@ The is a receipt generator for customers to a mini-shop.
 This program demonstrates the use of a switch conditional statements where discrete cases are already known like for instance when a particular item is selected by the customer.
 
 ### strings
-String are declared as char but with a size specified just like in Arrays. They are 1-Dimensional Arrays. They are terminated by a null character, which you do
+String are declared as char but with a size specified just like in Arrays. They are 1-Dimensional Arrays. They are terminated by a null character '\0', which you do
 have to. The compiler automatically adds the null character at the end.
 
 **String initialization**: `char msg[50] = "Bye";`  
