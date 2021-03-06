@@ -1,8 +1,7 @@
-//  Program that uses a function to determine is a Triangle valid or not
+//  Program that uses a function to determine if a Triangle is valid or not
 // For a triangle to be valid
 // 1. All sides should be of positive length
-// 2. Sum of lengths of any two sides, must be greater than the length of the
-// third side
+// 2. Sum of lengths of any two sides, must be greater than the length of the third side
 
 #include <cs50.h>
 #include <stdio.h>
