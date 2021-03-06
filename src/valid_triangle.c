@@ -8,24 +8,17 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-
 bool validTriangle(float a, float b, float c);
 
 int main(void) {
-  float b, h, d;
+  float b = get_float("Base: ");
+  float h = get_float("Height: ");
+  float d = get_float("Diagonal: ");
 
-  // printf("Input the triangle sides length: ");
-  // scanf("%f %f %f", &b, &h, &d);
+  // use ternary operator
+  string valid = (validTriangle(b, h, d)) ? "Valid" : "Invalid";
 
-  b = get_float("Base: ");
-  h = get_float("Height: ");
-  d = get_float("Diagonal: ");
-
-  if (validTriangle(b, h, d)) {
-    printf("Valid Triangle\n");
-  } else {
-    printf("Invalid Triangle\n");
-  }
+  printf("%s Triangle\n", valid);
 }
 
 bool validTriangle(float a, float b, float c) {
