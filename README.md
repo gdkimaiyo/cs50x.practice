@@ -74,10 +74,25 @@ Using in-built function strlen()
 `len = strlen(reply);`
 
 **String Compare** `strcmp(s1, s2)`  
-Compares two strings. Returns 0 if the two strings are the same, negative if s1<s2 and positive if s1>s2.
+Compares two strings. Returns 0 if the two strings are the same, negative if
+s1 is less than s2 and positive if s1 greater than s2.
 
 **String Concatenation** `strcat(s1, s2),`  
 Concatenates string s2 to the end of string s1
+
+### Command-Line Arguments => argv
+**Command Line Arguments** provides a way of writing programs in C that accepts
+zero or more arguments. Command Line arguments are passed to `main()` function.
+
+Importance points to note:
+- command line arguments are passed to `main()` as so:
+`main(int argc, char *argv[])`
+- argc is the argument count. It stores the number of command line arguments
+passed by the user, including the name of the program
+- argv is array of strings holding the actual arguments passed.
+- argv[0] holds the name of the program
+- argv[1] upto argv[n] are command line arguments, i.e, argv[1] is the first
+command line argument and argv[n] is the last argument
 
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
