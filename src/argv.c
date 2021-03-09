@@ -17,11 +17,14 @@ int main(int argc, char *argv[]) {
   // BUT first, if no argument is provided EXCEPT for the program name
   // Exit with 1 status
   if (argc < 2) {
-    printf("Missing command-line arguments\n");
+    printf("Missing command-line arguments EXCEPT for program name\n");
     return 1;
   }
 
   // Exit with 0 status > No problems encounted
-  printf("First argument: %s\n", argv[1]);
+  for (int i = 1; i < argc; i++) {
+    // Print the arguments passed after the program name
+    printf("argv[%i]: %s\n", i, argv[i]);
+  }
   return 0;
 }
