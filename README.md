@@ -81,8 +81,8 @@ s1 is less than s2 and positive if s1 greater than s2.
 Concatenates string s2 to the end of string s1
 
 ### Command-Line Arguments => argv
-**Command Line Arguments** provides a way of writing programs in C that accepts
-zero or more arguments. Command Line arguments are passed to `main()` function.
+Programs in C that accepts zero or more arguments. These arguments are called
+**Command Line arguments** which are passed to `main()` function.
 
 Importance points to note:
 - command line arguments are passed to `main()` as so:
@@ -93,6 +93,10 @@ passed by the user, including the name of the program
 - argv[0] holds the name of the program
 - argv[1] upto argv[n] are command line arguments, i.e, argv[1] is the first
 command line argument and argv[n] is the last argument
+- Command Line arguments provides a means of controlling the program outside
+instead of inside.
+- Arguments passed are separated by a space, however, wrap arguments with
+single or double quotes if the argument has a space within. 
 
 ### type_casting
 The **aim** of this program is to understand **type casting**. Type casting
