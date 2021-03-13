@@ -1,18 +1,25 @@
 # CS50 Harvard Practice Exercises
 ## About this repo
 Practice Exercises for Computer Science Course by edX in collaboration with
-Harvard University for the year 2021
+Harvard University for the year 2021.
+
+**NOTE:** some programs in **src** use the CS50x library **cs50.h**
 
 ### How to compile these C source files
 **NOTE**: *You should have [gcc](https://gcc.gnu.org/) installed in your
 computer to perform the next steps*
 - Clone this repo as shown below
-`git clone https://github.com/gdkimaiyo/cs50x.harvard.practice.exercises.git`
-- or fork it
+  - git clone
+  ```
+  git clone https://github.com/gdkimaiyo/cs50x.harvard.practice.exercises.git
+  ```
+  - or fork it
 - change directory to `cs50x.harvard.practice.exercises`
 - change directory to `src`
 - compile on the terminal by typing:
-`gcc stars.c cs50.c -o stars`
+```
+gcc stars.c cs50.c -o stars
+```
 - The above command does the following:
   - Compiles the main source file **stars.c**
   - Links the cs50 source file **cs50.c**
@@ -109,10 +116,9 @@ single or double quotes if the argument has a space within.
 ### Structs
 C structures are user-defined data type variables which allow storage of data
 items of different kinds, which it wouldn't have been possible in arrays.
-
 Simply put, with structures, data of type strings, int, float, e.t.c can be
 stored under one name.
 
 ### Structs as Arguments
-Structures can be passed as function arguments. `struct_as_argument.c` in program
+Structures can be passed as function arguments. `struct_as_argument.c` program in
 **src** demonstrates this.
