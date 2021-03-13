@@ -35,7 +35,6 @@ gcc stars.c cs50.c -o stars
 ### stars
 This program prints / outputs stars pattern with increasing height and width
 starting with 1 star.
-
 **Main learning lesson**: Understanding nesting in loops in C
 
 ### type_casting
@@ -44,7 +43,7 @@ refers to changing the variable of one data type to another. Like in the
 case of dividing two numbers of type int. The result for division will be
 of type float. **Although** your program will run without errors,
 the output will be inaccurate. This is called a **logical error**. Type casting
-fixesthis error
+fixes this error
 
 **Counter Option**: Why not just change the data type of the two numbers to
 of type float. **Yes**, that could work, **however**, that is a heavy handed
