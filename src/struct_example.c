@@ -1,5 +1,5 @@
-// Example showing using structs in C to store values of different kinds,
-// in which it wouldn't have been possible in case of variables or arrays
+// Example showing using structs in C data items of different kinds,
+// in which it wouldn't have been possible in case of arrays
 
 // [ NOTE ] This example doesn't use cs50 library
 
