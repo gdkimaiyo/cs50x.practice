@@ -49,6 +49,14 @@ fixes this error
 of type float. **Yes**, that could work, **however**, that is a heavy handed
 solution. It is like using a forklift to lift a small piece of stone.
 
+### abstraction
+This program prompts for a positive integer, then finds the summation of numbers from
+0 to that number.
+
+The **objective** of this program is to understand abstraction and loops.
+**Abstraction** is the use of functions to enable flexibility to reuse pieces
+of code.
+
 ### ternary
 This program demonstrates the use of **ternary** operator ?: in place of
 short conditional statements
@@ -57,14 +65,6 @@ short conditional statements
 
 For scenario above, if the expression is true value1 is assigned to the
 variable number, otherwise value2 is assigned.
-
-### abstraction
-This program prompts for a positive integer, then finds the summation of numbers from
-0 to that number.
-
-The **objective** of this program is to understand abstraction and loops.
-**Abstraction** is the use of functions to enable flexibility to reuse pieces
-of code.
 
 ### receipt
 The is a receipt generator for customers to a mini-shop.
@@ -121,3 +121,17 @@ stored under one name.
 ### Structs as Arguments
 Structures can be passed as function arguments. `struct_as_argument.c` program in
 **src** demonstrates this.
+
+### Selection Sort Algorithm
+**Ascending Order**
+- Find the smallest element from an array
+- Place the smallest element at the beginning of the array
+- Take whichever element at the beginning of the array and place it where the
+smallest element was
+- Repeat process until the array is sorted
+
+**Descending Order**
+- Repeat steps above, but instead of smallest element, take biggest element
+
+**NOTE** Selection Sort Algorithm is applicable where a small array is to be
+sorted or checking of all elements is compulsory.
