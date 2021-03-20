@@ -30,7 +30,6 @@ void arrayElements(int array[], int size) {
 
 void selectionSort(int array[], int size) {
   // Perform Selection Sort Algorithm
-  // Perform Selection Sort Algorithm
   for (int i = 0; i < size - 1 ; i++) {
     // Set the minimum index to be the current iteration
     int max_index = i;
