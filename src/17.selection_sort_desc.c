@@ -1,4 +1,5 @@
 // Selection Sort Algorithm
+// Sort in descending order
 
 #include <stdio.h>
 
@@ -29,17 +30,23 @@ void arrayElements(int array[], int size) {
 
 void selectionSort(int array[], int size) {
   // Perform Selection Sort Algorithm
-  for (int i = 0; i < size - 1; i++) {
-    // Assign the maximum number to be the first element in each iteration
-    int max = array[i];
-    // Find maximum number in array of numbers from index i to SIZE and
-    // swap positions by Selection Sort
+  // Perform Selection Sort Algorithm
+  for (int i = 0; i < size - 1 ; i++) {
+    // Set the minimum index to be the current iteration
+    int max_index = i;
+    // Find minimum number in the array from index i to SIZE
     for (int j = i; j < size; j++) {
-      if (array[j] > max) {
-        max = array[j];
-        array[j] = array[i];
-        array[i] = max;
+      if (array[j] > array[max_index]) {
+        max_index = j;
       }
     }
+    // Swapping
+    // Swap the maximum number with whatever number is in the current iteration
+    int max = array[max_index];
+    array[max_index] = array[i];
+    array[i] = max;
+
+    // Print array elements after every swap
+    // arrayElements(array, size);
   }
 }
