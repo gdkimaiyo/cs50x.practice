@@ -1,3 +1,5 @@
 src/mod.c
 src/pass.c
+src/do_while_pass.c
 src/main
+src/a.out
