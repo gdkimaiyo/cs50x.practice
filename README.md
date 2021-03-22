@@ -135,3 +135,12 @@ smallest element was
 
 **NOTE** Selection Sort Algorithm is applicable where a small array is to be
 sorted or checking of all elements is compulsory.
+
+### Recursion
+Recursion is the ability of a function to call / invoke itself. Recursive
+functions can sometimes replace loops in non-recursive functions.
+**Base case(s)** is used to determine when to terminate the recursive process
+- Some of the examples that use recursion are:
+  - 19.factorial.c
+  - 19.recursive_bubble_sort.c
+  - 19.fibonacci.c
