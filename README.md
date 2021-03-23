@@ -144,3 +144,19 @@ functions can sometimes replace loops in non-recursive functions.
   - 19.factorial.c
   - 19.recursive_bubble_sort.c
   - 19.fibonacci.c
+
+### Binary Search Algorithm
+Binary search, also known as logarithmic search, works such that it divides a
+**sorted** array into half, hence reducing the search area to find a
+target value.
+- Steps
+1. Find the middle element of array:: middle = (startValue + endValue) / 2
+2. If middle element = targetValue, return "FOUND",
+3. If middle > targetValue narrow the search to the lower / left half.
+effectively, the endValue will be endValue = middle - 1
+4. If middle < targetValue narrow the search to the upper / right half.
+effectively, the startValue will be startValue = middle + 1
+5. If targetValue is not found at all, return "NOT FOUND", that is, the moment
+startValue becomes bigger than the endValue
+
+Binary search can be achieved by **iterative** or **recursive** methods.
