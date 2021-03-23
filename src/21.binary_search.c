@@ -1,7 +1,8 @@
 // Binary search, also known as logarithmic search, works such that it divides
 // a *sorted* array into half, hence reducing the search area to find a target value.
 // Steps
-// 1. Find the middle element of array:: middle = (startValue + endValue) / 2
+// 1. Find the middle element of array::
+// middle = startValue + (endValue - startValue) / 2
 // 2. If middle element = targetValue, return "FOUND",
 // 3. If middle > targetValue narrow the search to the lower / left half
 // effetctively, the endValue will be endValue = middle - 1
@@ -15,7 +16,7 @@
 
 void arrayElements(int array[], int size);
 void bubbleSort(int array[], int size);
-int binarySearch(int array[], int size, int start, int end, int target);
+int binarySearch(int array[], int start, int end, int target);
 
 int main(void) {
   int numbers[SIZE] = {11, 23, 8, 14, 30, 9, 6, 17, 22, 28, 25, 15, 7, 10, 19};
@@ -28,7 +29,7 @@ int main(void) {
   int target_value = 17;
   int start_value = 0, end_value = SIZE - 1;
 
-  int found_index = binarySearch(numbers, SIZE, start_value, end_value, target_value);
+  int found_index = binarySearch(numbers, start_value, end_value, target_value);
 
   if (found_index == -1) {
     printf("%i, Not FOUND!\n", target_value);
@@ -38,7 +39,7 @@ int main(void) {
 }
 
 // Binary Search Algorithm > Iterative
-int binarySearch(int array[], int size, int start, int end, int target) {
+int binarySearch(int array[], int start, int end, int target) {
   while (start <= end) {
     int middle = start + (end - start) / 2;
 
