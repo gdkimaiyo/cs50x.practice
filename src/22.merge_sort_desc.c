@@ -1,4 +1,4 @@
-// Merge Sort Algorithm
+// Merge Sort Algorithm > Descending Order
 // Divide and conquer technique
 // Merge Sort Algorithm makes use if recursion
 // Merge Sort comes with the cost of creating temporary arrays for holding
