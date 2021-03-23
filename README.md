@@ -169,3 +169,12 @@ startValue = middle + 1
 startValue becomes bigger than the endValue
 
 Binary search can be achieved by **iterative** or **recursive** methods.
+
+### Merge Sort Algorithm
+Divide and conquer technique. Merge Sort Algorithm makes use if recursion.
+Merge Sort comes with the cost of creating temporary arrays for holding divided
+sub-arrays.
+- Steps
+  1. Sort the left half of the array
+  2. Sort the right half of the array
+  3. Merge the two halves together
