@@ -152,7 +152,7 @@ target value.
 - Steps
 1. Find the middle element of array:: as shown below
 ```
-middle = (startValue + endValue) / 2
+middle = startValue + (endValue - startValue) / 2
 ```
 2. If middle element = targetValue, `return "FOUND"`,
 3. If middle > targetValue narrow the search to the lower / left half.
