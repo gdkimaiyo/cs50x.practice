@@ -178,3 +178,15 @@ sub-arrays.
   1. Sort the left half of the array
   2. Sort the right half of the array
   3. Merge the two halves together
+
+### Pointers
+A **pointer** is a variable whose value is an address of a another variable.
+It turns out that every variable is a memory location and every memory location
+has its address in memory defined which can be accessed using ampersand (&) sign
+
+`int n = 12; // variable n declaration and initialization`
+`int *p = &n // pointer variable storing the address of n`
+
+**Note** that the data type of the pointer should be of the same type as the
+actual variable that the pointer is pointing to. Also the asterisk signifies
+that the variable is a pointer.
