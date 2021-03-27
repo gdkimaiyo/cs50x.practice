@@ -193,12 +193,12 @@ that the variable is a pointer.
 
 ### Call by value and Call by reference
 - call by value, values of the variables are passed to a function while call by
-reference, addresses (memory locations) of the variables are to the function.
+reference, addresses (memory locations) of the variables are passed to the function.
 - call by value, actual variables remain unchanged, that is, changes do not
 reflect outside of the function (callee) whereas in call by reference changes
 reflect both outside and inside of the function (callee).
 - call by value does not alter the values of the actual variables while call by
 reference does.
-- call by value, memory address actual parameter and formal parameter are
+- call by value, memory address of actual parameter and formal parameter are
 different whereas call by reference memory address of actual and formal parameters
 are the same.
