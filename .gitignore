@@ -1,7 +1,6 @@
 src/mod.c
 src/pass.c
 src/atm.c
-src/27.null_pointer.c
 src/digit_zero.c
 src/ATM_4.c
 src/ATM_6.c
