@@ -12,7 +12,7 @@ int main(void) {
   printf("Which file to open?: ");
   scanf("%s", fname);
 
-  // Open file in appending mode
+  // Open file in read mode. Read mode to make it possible to use fgetc()
   file = fopen(fname, "r");
 
   if (file == NULL) {

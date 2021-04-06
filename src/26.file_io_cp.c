@@ -28,7 +28,8 @@ int main(int argc, char *argv[]) {
   // Read file first, then write contents to the new file one character at a time
   char str = fgetc(file);
   while (str != EOF) {
-    fprintf(new_file, "%c", str);
+    fputc(str, new_file);
+    // fprintf(new_file, "%c", str);
     str = fgetc(file);
   }
 
