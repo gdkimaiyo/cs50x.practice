@@ -1,32 +1,42 @@
-**NOTE:** some programs in the directories above **src** use the CS50x library **cs50.h**
+# CS50x Practice Exercises
 
-### How to compile these C source files
+## Author
+[Gideon Kimaiyo](https://github.com/gdkimaiyo)
+
+## Note
+Some programs in the directories above use the CS50x library **cs50.h**
+
+## How to compile C source files
 **NOTE**: *You should have [gcc](https://gcc.gnu.org/) installed in your
 computer to perform the next steps*
-- Clone this repo as shown below
-  - git clone
-  ```
-  git clone https://github.com/gdkimaiyo/cs50x.harvard.practice.exercises.git
-  ```
-  - or fork it
+- Clone this repo
 - change directory to `cs50x.harvard.practice.exercises`
-- change directory to `src`
+- change directory to `src/wk1` or any week containing c source file
 - compile on the terminal by typing:
 ```
-gcc stars.c cs50.c -o stars
+gcc filename.c cs50.c -o filename
 ```
+where **filename** is the name of the C source file
 - The above command does the following:
-  - Compiles the main source file **stars.c**
+  - Compiles the main source file **filename.c**
   - Links the cs50 source file **cs50.c**
-  - Specify the output file by using the option -o stars. Without adding -o
+  - Specify the output file by using the option -o filename. Without adding -o
   option, a.out file is generated.
 - Run the generated executable by typing the command:
 ```
-./stars
+./filename
 ```
 - Done.
 
-## Some of the programs are briefly explained below
+## Week 0
+Introduction to Programming using
+[Scratch](https://scratch.mit.edu/projects/editor/), a visual programming
+language which can be used to create games, interactive stories and animations
+
+To view the scratch projects `src/wk0` directory, you need to install [Scratch 3](https://scratch.mit.edu/download) or use the
+[Online editor](https://scratch.mit.edu/projects/editor/)
+
+## Week 1
 ### stars
 This program prints / outputs stars pattern with increasing height and width
 starting with 1 star.
@@ -89,6 +99,7 @@ s1 is less than s2 and positive if s1 greater than s2.
 **String Concatenation** `strcat(s1, s2),`  
 Concatenates string s2 to the end of string s1
 
+## Week 2
 ### Command-Line Arguments => argv
 Programs in C that accepts zero or more arguments. These arguments are called
 **Command Line arguments** which are passed to `main()` function.
@@ -117,6 +128,7 @@ stored under one name.
 Structures can be passed as function arguments. `struct_as_argument.c` program in
 **src** demonstrates this.
 
+## Week 3
 ### Selection Sort Algorithm
 **Ascending Order**
 - Find the smallest element from an array
@@ -174,6 +186,7 @@ sub-arrays.
   2. Sort the right half of the array
   3. Merge the two halves together
 
+## Week 4
 ### Pointers
 A **pointer** is a variable whose value is an address of a another variable.
 It turns out that every variable is a memory location and every memory location
@@ -197,6 +210,3 @@ reference does.
 - call by value, memory address of actual parameter and formal parameter are
 different whereas call by reference memory address of actual and formal parameters
 are the same.
-
-## Author
-[Gideon Kimaiyo](https://github.com/gdkimaiyo)
