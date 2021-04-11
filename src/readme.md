@@ -33,12 +33,12 @@ Introduction to Programming using
 [Scratch](https://scratch.mit.edu/projects/editor/), a visual programming
 language which can be used to create games, interactive stories and animations
 
-To view the scratch projects `src/wk0` directory, you need to install [Scratch 3](https://scratch.mit.edu/download) or use the
+To view the scratch projects in `src/wk0` directory, you need to install [Scratch 3](https://scratch.mit.edu/download) or use the
 [Online editor](https://scratch.mit.edu/projects/editor/)
 
 ## Week 1
 ### stars
-This program prints in / outputs stars pattern with increasing height and width
+This program prints / outputs stars pattern with increasing height and width
 starting with 1 star.
 **Main learning lesson**: Understanding nesting in loops in C
 
