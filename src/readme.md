@@ -38,7 +38,7 @@ To view the scratch projects `src/wk0` directory, you need to install [Scratch 3
 
 ## Week 1
 ### stars
-This program prints / outputs stars pattern with increasing height and width
+This program prints in / outputs stars pattern with increasing height and width
 starting with 1 star.
 **Main learning lesson**: Understanding nesting in loops in C
 
