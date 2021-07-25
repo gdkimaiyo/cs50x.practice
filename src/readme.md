@@ -210,3 +210,18 @@ reference does.
 - call by value, memory address of actual parameter and formal parameter are
 different whereas call by reference memory address of actual and formal parameters
 are the same.
+
+## Week 5
+### Data Structures
+**Data structures** in C is a way of storing data in an organised and efficient way.
+The data should be of the same data type. The data is stored as per memory availability.
+
+Some examples of data structures are:
+- Array
+- Linked List
+- Stack
+- Queue
+- Hashing
+- Trees
+
+### Linked Lists
