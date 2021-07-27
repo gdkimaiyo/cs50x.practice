@@ -8,3 +8,7 @@ src/grade.c
 src/do_while_pass.c
 **/main
 src/a.out
+src/wk5/30.traverse.c
+src/wk5/31.insertion_end.c
+src/wk5/31.insertion_middle.c
+src/wk5/31.insertion_start.c
