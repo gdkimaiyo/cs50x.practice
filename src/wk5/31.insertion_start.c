@@ -34,7 +34,7 @@ int main(void) {
     return 1;
   }
 
-  // set head node;
+  //set head node
   head = list;
 
   // Insert a node at the start of linked list
@@ -93,7 +93,7 @@ node *insertNodeStart(struct node *head) {
   new_node->next = head;
   // change head to point to new node
   head = new_node;
-  return head;
+  return new_node;
 }
 
 void freeLinkedList(struct node *list) {
