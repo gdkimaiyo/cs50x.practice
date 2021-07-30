@@ -1,4 +1,4 @@
-// Create and Traverse a linked list
+// Insert a node at the beginning of a linked list
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -38,8 +38,18 @@ int main(void) {
     }
   }
 
-	printf("\nTraverse Linked List\n");
+  // Insert a node at the start
+  // allocate memory
+  node *new_node = malloc(sizeof(node));
+  // store number
+  new_node->number = 12;
+  // Point next of new node to head
   struct node *head = list;
+  new_node->next = head;
+  // change head to point to new node
+  head = new_node;
+
+  printf("\nTraverse Linked List\n");
   while(head != NULL) {
     printf("%i\n", head->number);
     head = head->next;
