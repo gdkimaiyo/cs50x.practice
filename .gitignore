@@ -9,5 +9,4 @@ src/do_while_pass.c
 **/main
 src/a.out
 
-src/wk5/31.insertion_end.c
 src/wk5/31.insertion_middle.c
