@@ -9,7 +9,7 @@ typedef struct node{
 } node;
 
 // Create Linked List
-node *createList(int n, struct node *list, struct node *temp, struct node *tail);
+node *createList(struct node *list, struct node *temp, struct node *tail);
 // Traverse Linked List
 void traverseLinkedList(struct node *list);
 // Insert new node at the beginning
@@ -23,15 +23,14 @@ int main(void) {
   struct node *tail; // Current node
   struct node *temp; // Temporary node
 
-  // User to determine size / length of linked list
-  int list_size;
-  printf("How many nodes in list? ");
-  scanf("%i", &list_size);
-
-  list = createList(list_size, list, temp, tail);
+  list = createList(list, temp, tail);
   if (list == NULL) {
     return 1;
   }
+
+	// Traverse linked list before insertion
+  printf("\nLinked List. Before Insertion\n");
+  traverseLinkedList(list);
 
   // Insert a node at the end of linked list
   list = insertNodeEnd(list);
@@ -39,14 +38,20 @@ int main(void) {
     return 1;
   }
 
-  // Traverse linked list
+	// Traverse linked list after insertion
+  printf("\nLinked List. After Insertion\n");
   traverseLinkedList(list);
 
   freeLinkedList(list);
 }
 
-node *createList(int n, struct node *list, struct node *temp, struct node *tail) {
+node *createList(struct node *list, struct node *temp, struct node *tail) {
   list = NULL;
+  // User to determine size / length of linked list
+  int n;
+  printf("How many nodes in list? ");
+  scanf("%i", &n);
+
   for(int i = 1; i <= n; i++) {
     // allocate memory to store current node / tail
     tail = malloc(sizeof(node));
@@ -68,7 +73,6 @@ node *createList(int n, struct node *list, struct node *temp, struct node *tail)
 }
 
 void traverseLinkedList(struct node *list) {
-  printf("\nTraverse Linked List\n");
   while(list != NULL) {
     printf("%i\n", list->number);
     list = list->next;
