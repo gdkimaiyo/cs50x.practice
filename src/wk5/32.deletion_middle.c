@@ -1,4 +1,4 @@
-// Insert a node at the middle of a linked list
+// Delete a node at the middle of a linked list
 
 #include<stdio.h>
 #include<stdlib.h>
@@ -12,8 +12,8 @@ typedef struct node{
 node *createList(struct node *list, struct node *temp, struct node *tail);
 // Traverse Linked List
 void traverseLinkedList(struct node *list);
-// Insert new node at the middle
-node *insertNodeMiddle(struct node *list);
+// Delete node at the middle
+node *deleteNodeMiddle(struct node *list);
 // Free Linked List
 void freeLinkedList(struct node *list);
 
@@ -28,18 +28,18 @@ int main(void) {
     return 1;
   }
 
-  // Traverse linked list before insertion
-  printf("\nLinked List. Before Insertion\n");
+  // Traverse linked list before deletion
+  printf("\nLinked List. Before Deletion\n");
   traverseLinkedList(list);
 
-  // Insert a node at the end of linked list
-  list = insertNodeMiddle(list);
+  // Delete a node at the end of linked list
+  list = deleteNodeMiddle(list);
   if (list == NULL) {
     return 1;
   }
 
-  // Traverse linked list after insertion
-  printf("\nLinked List. After Insertion\n");
+  // Traverse linked list after deletion
+  printf("\nLinked List. After Deletion\n");
   traverseLinkedList(list);
 
   freeLinkedList(list);
@@ -79,30 +79,22 @@ void traverseLinkedList(struct node *list) {
   }
 }
 
-// Insert a node at the middle
-node *insertNodeMiddle(struct node *list) {
-  // Allocate memory
-  struct node *new_node = malloc(sizeof(node));
-  if (new_node == NULL) {
-    return NULL;
-  }
-  // insert new node value
-  printf("\nNew Node Value to Insert: ");
-  scanf("%i", &new_node->number);
-  // Where to insert the new node
+// Delete a node at the middle
+node *deleteNodeMiddle(struct node *list) {
   int pos;
-  printf("Position to insert? ");
+  printf("Position of node to delete: ");
   scanf("%i", &pos);
 
   // create a temp node to hold head node
   struct node *temp = list;
+	// Traverse to node before the node to delete
   for(int i=2; i < pos; i++) {
     if(temp->next != NULL) {
       temp = temp->next;
     }
   }
-  new_node->next = temp->next;
-  temp->next = new_node;
+	// Change next pointers to exclude node from list
+  temp->next = temp->next->next;
 
   return list;
 }
