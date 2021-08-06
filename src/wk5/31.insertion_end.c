@@ -49,7 +49,7 @@ node *createList(struct node *list, struct node *temp, struct node *tail) {
   list = NULL;
   // User to determine size / length of linked list
   int n;
-  printf("How many nodes in list? ");
+  printf("Create a Linked List\nHow many nodes in list? ");
   scanf("%i", &n);
 
   for(int i = 1; i <= n; i++) {
