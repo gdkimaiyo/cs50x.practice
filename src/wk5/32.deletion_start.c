@@ -12,7 +12,7 @@ typedef struct node{
 node *createList(struct node *list, struct node *temp, struct node *tail);
 // Traverse Linked List
 void traverseLinkedList(struct node *list);
-// Insert new node at the beginning
+// Delete node at the beginning
 node *deleteNodeStart(struct node *head);
 // Free Linked List
 void freeLinkedList(struct node *list);
@@ -83,7 +83,7 @@ void traverseLinkedList(struct node *list) {
   }
 }
 
-// Insert a node at the start
+// Delete a node at the start
 node *deleteNodeStart(struct node *head) {
 	// point head to the second node
   head = head->next;
