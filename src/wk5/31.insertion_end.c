@@ -12,7 +12,7 @@ typedef struct node{
 node *createList(struct node *list, struct node *temp, struct node *tail);
 // Traverse Linked List
 void traverseLinkedList(struct node *list);
-// Insert new node at the beginning
+// Insert new node at the end
 node *insertNodeEnd(struct node *list);
 // Free Linked List
 void freeLinkedList(struct node *list);
