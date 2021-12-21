@@ -2,10 +2,10 @@ from cs50 import get_int
 
 def main():
     n = get_int("Print 'meow' how many times? ")
-    for i in range(n):
-        meow()
+    meow(n)
 
-def meow():
-    print("meow")
+def meow(x):
+    for i in range(x):
+        print("meow")
 
 main()
