@@ -2,5 +2,29 @@
 {% block body %}
 <section>
   <h1>Members</h1>
+  {% if members|length > 0 %}
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Name</th>
+        <th scope="col">Sport</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for member in members %}
+      <tr>
+        <th scope="row"></th>
+        <td>{{ member.name }}</td>
+        <td>{{ member.sport }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% else %}
+  <div class="alert alert-info" role="alert">
+    No member available
+  </div>
+  {% endif %}
 </section>
 {% endblock %}

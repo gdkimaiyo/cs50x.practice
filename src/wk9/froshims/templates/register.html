@@ -2,5 +2,20 @@
 {% block body %}
 <section>
   <h1>Register</h1>
+  <form class="" action="/signup" method="post">
+    <div class="form-group">
+      <label class="label" for="nameInput">Your Name</label>
+      <input class="form-control name-input" id="nameInput" type="text" name="name" autofocus autocomplete="off" placeholder="Your name">
+    </div>
+    <label style="margin-bottom: 4px">Please select a sport</label>
+    {% for sport in sports %}
+    <div class="form-group checkbox">
+      <input class="form-check-input" id="{{ sport }}-checkbox" type="checkbox" name="sport" value="{{ sport }}">
+      <label class="form-check-label" for="{{ sport }}-checkbox">{{ sport }}</label>
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-primary register-btn">Register</button>
+  </form>
 </section>
 {% endblock %}

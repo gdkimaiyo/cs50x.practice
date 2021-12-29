@@ -38,7 +38,7 @@ main {
   padding-left: 0;
 }
 
-.menu-items li a, 
+.menu-items li a,
 .on-handset {
   text-decoration: none;
   color: #ffffff;
@@ -47,6 +47,24 @@ main {
 .gdk-logo {
   font-size: 24px;
   font-weight: bold;
+}
+
+.label {
+  margin-top: 6px;
+  margin-bottom: 12px;
+}
+
+.name-input {
+  width: 50%;
+  margin-bottom: 12px;
+}
+
+.checkbox {
+  margin-top: 8px;
+}
+
+.register-btn {
+  margin-top: 16px;
 }
 
 /* On Handset Devices - Responsiveness */
@@ -68,5 +86,9 @@ main {
     display: block;
     padding-top: 22px;
     padding-left: 18px;
+  }
+
+  .name-input {
+    width: 100%;
   }
 }
