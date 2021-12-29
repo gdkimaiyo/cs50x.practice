@@ -10,3 +10,4 @@ src/do_while_pass.c
 **/.DS_Store
 **/__pycache__
 src/a.out
+**/venv
