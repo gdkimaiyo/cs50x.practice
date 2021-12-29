@@ -1,4 +1,18 @@
 {% extends "layout.html" %}
 {% block body %}
-  <p>Frosh IMS</p>
+<section>
+  <!-- Jumbotron. Introduction Section -->
+  <div class="jumbotron">
+    <h1 class="display-4">Frosh IMS</h1>
+    <p class="lead">
+      Register for a “frosh IMs”, intramural sports.
+    </p>
+
+    <hr class="my-4">
+
+    <a class="btn btn-primary btn-md" href="{{ url_for('register') }}" role="button">
+      Register
+    </a>
+  </div>
+</section>
 {% endblock %}

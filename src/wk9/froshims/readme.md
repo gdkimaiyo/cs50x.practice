@@ -1,5 +1,5 @@
 # Frosh IMS
-Flask Web App to register students to Inter-Mural Sports
+Flask Web App that registers students to Inter-Mural Sports
 
 ## To Get Started
 Navigate to the directory where frosh IMS project is located.
