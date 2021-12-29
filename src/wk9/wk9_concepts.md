@@ -1,4 +1,10 @@
-# Flas
+# Flask
 
 ## Week 9 Concepts
-- Flask Introduction
+- Web Programming
+- Flask
+- Forms
+- POST, GET
+- Layouts
+- Storing Data
+- Sessions
