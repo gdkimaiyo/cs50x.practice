@@ -53,3 +53,14 @@ def members():
     # Close DB
     db.close()
     return render_template("members.html", members=MEMBERS)
+
+@app.route("/deregister", methods=["POST"])
+def deregister():
+    # Open DB
+    memberId = request.form.get('memberId')
+    db = SQL.connect("froshims.db")
+    db.execute("DELETE FROM members WHERE id=?", (memberId))
+    db.commit()
+    # Close DB
+    db.close()
+    return redirect("/members")
