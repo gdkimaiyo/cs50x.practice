@@ -9,6 +9,6 @@ Harvard University for the year 2021.
 ## Clone this repo
 - git clone.
 ```
-git clone https://github.com/gdkimaiyo/cs50x.harvard.practice.exercises.git
+git clone https://github.com/gdkimaiyo/cs50x.practice.git
 ```
 - or fork it.
